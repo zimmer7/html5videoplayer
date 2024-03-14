@@ -506,6 +506,11 @@ class Video extends AbstractEntity
             return $media;
         }
 
+        // Relative paths, likely coming from the `GeneratePublicUrlForResource` EventListener
+        if (str_starts_with($media, '/')) {
+            return $media;
+        }
+
         throw new \RuntimeException('Could not fetch the URL in the right way', 12_367_238_462_384);
     }
 
