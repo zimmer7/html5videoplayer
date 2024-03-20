@@ -54,6 +54,11 @@ class Video extends AbstractEntity
     protected $mp4source;
 
     /**
+     * @var string
+     */
+    protected $subtitle;
+
+    /**
      * The webmsource of the Video
      *
      * @var string
@@ -198,6 +203,16 @@ class Video extends AbstractEntity
     public function setMp4source($mp4source)
     {
         $this->mp4source = $mp4source;
+    }
+
+    public function getSubtitle()
+    {
+        return $this->subtitle;
+    }
+
+    public function setSubtitle($s)
+    {
+        $this->subtitle = $s;
     }
 
     /**

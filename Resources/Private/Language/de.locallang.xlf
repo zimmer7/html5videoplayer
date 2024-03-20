@@ -100,6 +100,10 @@
 				<source>MP4 Source</source>
 				<target>MP4 Quelle</target>
 			</trans-unit>
+			<trans-unit id="tx_html5videoplayer_domain_model_video.subtitle">
+				<source>Subtitle</source>
+				<target>Untertitel</target>
+			</trans-unit>
 			<trans-unit id="tx_html5videoplayer_domain_model_video.webmsource">
 				<source>WebM Source</source>
 				<target>WebM Quelle</target>

@@ -76,6 +76,9 @@
 			<trans-unit id="tx_html5videoplayer_domain_model_video.mp4source">
 				<source>MP4 Source</source>
 			</trans-unit>
+			<trans-unit id="tx_html5videoplayer_domain_model_video.subtitle">
+				<source>Subtitle</source>
+			</trans-unit>
 			<trans-unit id="tx_html5videoplayer_domain_model_video.webmsource">
 				<source>WebM Source</source>
 			</trans-unit>

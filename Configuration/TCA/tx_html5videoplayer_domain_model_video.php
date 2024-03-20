@@ -219,6 +219,25 @@ $tca = [
                 ],
             ]
         ],
+        'subtitle' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:html5videoplayer/Resources/Private/Language/locallang.xlf:tx_html5videoplayer_domain_model_video.subtitle',
+            'config' => [
+                'type' => 'input',
+                'renderType' => 'inputLink',
+                'size' => 100,
+                'eval' => 'trim',
+                'fieldControl' => [
+                    'linkPopup' => [
+                        'options' => [
+                            'blindLinkOptions' => 'mail,page,spec,url,folder',
+                            'blindLinkFields' => 'class,params,target,title',
+                            'allowedExtensions' => 'vtt',
+                        ],
+                    ],
+                ],
+            ]
+        ],
         'height' => [
             'exclude' => true,
             'label' => 'LLL:EXT:html5videoplayer/Resources/Private/Language/locallang.xlf:tx_html5videoplayer_domain_model_video.height',
@@ -341,7 +360,7 @@ $tca = [
     ],
     'types' => [
         '0' => [
-            'showitem' => '--div--;LLL:EXT:html5videoplayer/Resources/Private/Language/locallang.xlf:video,title,--palette--;;dimensions,posterimage, mp4source, webmsource, oggsource, youtube, --div--;LLL:EXT:html5videoplayer/Resources/Private/Language/locallang.xlf:configurations, downloadlinks, supportvideojs, preloadvideo, autoplayvideo, mutevideo, loopvideo, video_starttime, controlsvideo, --div--;LLL:EXT:html5videoplayer/Resources/Private/Language/locallang.xlf:description, description, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, --palette--;;language, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.access,--palette--;;visibility, --palette--;;access'
+            'showitem' => '--div--;LLL:EXT:html5videoplayer/Resources/Private/Language/locallang.xlf:video,title,--palette--;;dimensions,posterimage, mp4source, subtitle, webmsource, oggsource, youtube, --div--;LLL:EXT:html5videoplayer/Resources/Private/Language/locallang.xlf:configurations, downloadlinks, supportvideojs, preloadvideo, autoplayvideo, mutevideo, loopvideo, video_starttime, controlsvideo, --div--;LLL:EXT:html5videoplayer/Resources/Private/Language/locallang.xlf:description, description, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, --palette--;;language, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.access,--palette--;;visibility, --palette--;;access'
         ],
     ],
     'palettes' => [

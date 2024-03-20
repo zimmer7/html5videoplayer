@@ -27,6 +27,7 @@ CREATE TABLE tx_html5videoplayer_domain_model_video (
 	oggsource tinytext,
 	youtube tinytext,
 	vimeo tinytext,
+	subtitle tinytext,
 	height tinytext,
 	width tinytext,
 	downloadlinks tinyint(3) DEFAULT '0' NOT NULL,
